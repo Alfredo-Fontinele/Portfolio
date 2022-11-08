@@ -11,16 +11,16 @@ export const Header = ({ title }:ITitle) => {
             <nav>
                 <ul>
                     <li>
-                        <S.LinkHeader to="/">Home</S.LinkHeader>
+                        <S.LinkHeader to="/">Início</S.LinkHeader>
                     </li>
                     <li>
-                        <S.LinkHeader to="/projects">Projects</S.LinkHeader>
+                        <S.LinkHeader to="/projects">Projetos</S.LinkHeader>
                     </li>
                     <li>
-                        <S.LinkHeader to="/about">About</S.LinkHeader>
+                        <S.LinkHeader to="/about">Sobre</S.LinkHeader>
                     </li>
                     <li>
-                        <S.LinkHeader to="/contact">Contact</S.LinkHeader>
+                        <S.LinkHeader to="/contact">Contato</S.LinkHeader>
                     </li>
                 </ul>
             </nav>

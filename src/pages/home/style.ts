@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import logo from '../../../src/assets/KRATOS.jpg'
 import { Link } from 'react-router-dom'
 
 interface IPhoto {
@@ -6,7 +7,7 @@ interface IPhoto {
 }
 
 export const Home = styled.main`
-    background-image: linear-gradient(#0000009d, #0000009d, #0000009d), url("https://images3.alphacoders.com/843/843016.jpg");
+    background-image: linear-gradient(#0000009d, #0000009d, #0000009d), url(${logo});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
