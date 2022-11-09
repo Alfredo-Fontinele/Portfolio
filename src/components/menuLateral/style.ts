@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { IoMdClose } from 'react-icons/io'
+import { FadeInDown } from "../../animations";
 
 export const MenuLateral = styled.div`
+    animation: 0.5s ${FadeInDown};
     position: fixed;
     top: 0;
     right: 0;
@@ -26,7 +28,7 @@ export const MenuLateral = styled.div`
     nav ul li svg {
         font-size: 32px;
         font-weight: bold;
-        color: var(--grey-2);
+        color: var(--grey-1);
     }
 
     nav ul li a {
@@ -35,14 +37,14 @@ export const MenuLateral = styled.div`
         align-items: center;
         font-weight: 500;
         font-size: 18px;
-        color: var(--grey-2);
+        color: var(--grey-1);
         gap: 20px;
     }
 `
 
 export const BtnClose = styled(IoMdClose)`
     font-size: 35px;
-    color: var(--grey-2);
+    color: var(--grey-1);
     display: flex;
     justify-content: center;
     align-items: center;

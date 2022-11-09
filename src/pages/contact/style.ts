@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FlipIny } from "../../animations";
 
 interface IContactItem {
     bg: string
@@ -11,10 +12,9 @@ export const SectionContact = styled.section`
 `
 
 export const Contact = styled.section`
-    /* background-image: url("https://i.pinimg.com/originals/38/b2/d8/38b2d8bcac8b7b048b191645f3e6b816.png"); */
     width: 100%;
-    padding: 2rem 0;
-    gap: 2rem;
+    padding: 4rem 1rem;
+    gap: 4rem;
     min-height: inherit;
     display: flex;
     flex-direction: column;
@@ -39,12 +39,13 @@ export const ContactList = styled.ul`
 `
 
 export const ContactItem = styled.a<IContactItem>`
+    animation: 1s ${FlipIny};
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
-    font-weight: bold;
-    font-size: 22px;
+    font-weight: 600;
+    font-size: 18px;
     width: 100%;
     max-width: 400px;
     padding: 1rem 2rem;

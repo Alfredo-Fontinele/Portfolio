@@ -22,7 +22,7 @@ export const FooterContainer = styled.div`
     }
 `
 
-export const Footer__social = styled.a`
+export const FooterSocial = styled.a`
     svg {
         border-radius: 30%;
         padding: 10px;
@@ -59,14 +59,14 @@ export const Footer__social = styled.a`
     }
 `
 
-export const Footer__icons = styled.div`
+export const FooterIcons = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 `
 
-export const Footer__developer = styled.div`
+export const FooterDeveloper = styled.div`
     animation: logo 7s infinite;
     display: flex;
     flex-direction: column;

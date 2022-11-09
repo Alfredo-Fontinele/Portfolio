@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import HoverCard from '../../../src/assets/HoverCard.webp'
+import BgExtra from '../../../src/assets/BGextra.webp'
+import { FadeLeft } from "../../animations";
 
 export const SectionProjects = styled.section`
     width: 100%;
@@ -8,7 +11,6 @@ export const SectionProjects = styled.section`
 `
 
 export const Projects = styled.section`
-    /* background-image: url("https://i.pinimg.com/originals/38/b2/d8/38b2d8bcac8b7b048b191645f3e6b816.png"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,14 +23,14 @@ export const Projects = styled.section`
     gap: 6rem;
 `
 
-export const Projects__title = styled.h1`
+export const ProjectsTitle = styled.h1`
     font-size: 2.5rem;
     font-weight: 500;
     text-align: center;
     color: var(--primary);
 `
 
-export const Projects__list = styled.ul`
+export const ProjectsList = styled.ul`
     width: 100%;
     height: 100%;
     display: flex;
@@ -52,8 +54,9 @@ export const Projects__list = styled.ul`
     }
 `
 
-export const Card__project = styled.a`
-    background-image: linear-gradient(#22292393, #135be29f), url("https://wallpaperaccess.com/full/303594.jpg");
+export const CardProject = styled.a`
+    animation: 1s ${FadeLeft};
+    background-image: linear-gradient(#22292393, #135be29f), url(${BgExtra});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,7 +76,7 @@ export const Card__project = styled.a`
     gap: 30px;
     transition: all 1s;
     &:hover {
-        background-image: linear-gradient(#470de698, #3511d321), url("https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-image: linear-gradient(#470de698, #3511d321), url(${HoverCard});
         background-size: cover;
         background-repeat: no-repeat;
         transform: scale(1.03);
@@ -81,7 +84,7 @@ export const Card__project = styled.a`
     }
 `
 
-export const Card__title = styled.h1`
+export const CardTitle = styled.h1`
     text-align: center;
     background-color: #544aa377;
     border-radius: 10px;
@@ -91,7 +94,7 @@ export const Card__title = styled.h1`
     font-size: 1.5rem;
 `
 
-export const Card__img = styled.img`
+export const CardImg = styled.img`
     border-radius: 10px;
     object-fit: cover;
     width: 100%;

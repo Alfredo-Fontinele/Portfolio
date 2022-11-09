@@ -1,6 +1,10 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 import logo from '../../../src/assets/KRATOS.jpg'
+import HoverCard from '../../../src/assets/HoverCard.webp'
+import BgHomeInitial from '../../../src/assets/KRATOS.jpg'
+import BGHomeTechs from '../../../src/assets/BGHomeTechs.jpg'
 import { Link } from 'react-router-dom'
+import { FlipIny, FadeLeft } from '../../animations';
 
 interface IPhoto {
     photo: string
@@ -11,6 +15,7 @@ export const Home = styled.main`
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -32,6 +37,7 @@ export const HomeInitial = styled.section`
 `
 
 export const SectionWelcome = styled.section`
+    animation: 1s ${FadeLeft};
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -125,6 +131,7 @@ export const BtnAbout = styled(Link)`
 `
 
 export const SectionPhoto = styled.section<IPhoto>`
+    animation: 1s ${FlipIny};
     background-image: url(${({ photo }) => photo});
     background-size: cover;
     border-radius: 20%;
@@ -134,9 +141,10 @@ export const SectionPhoto = styled.section<IPhoto>`
 
 export const Technologies = styled.section`
     background-color: rgb(10,20,40);
-    background-image: linear-gradient(#00000026,#00000044), url("https://images3.alphacoders.com/954/954241.jpg");
+    background-image: linear-gradient(#00000026,#00000044), url(${BGHomeTechs});
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -146,13 +154,13 @@ export const Technologies = styled.section`
     gap: 100px;
 `
 
-export const Technologies__title = styled.h1`
+export const TechnologiesTitle = styled.h1`
     font-size: 45px;
     font-weight: 500;
     color: var(--primary);
 `
 
-export const Technologies__list = styled.ul`
+export const TechnologiesList = styled.ul`
     width: 100%;
     height: 100%;
     display: flex;
@@ -177,8 +185,8 @@ export const Technologies__list = styled.ul`
     }
 `
 
-export const Card__technology = styled.li`
-    background-image: linear-gradient(#0c2ce498, #2c0be99c), url("https://images3.alphacoders.com/843/843016.jpg");
+export const CardTechnology = styled.li`
+    background-image: linear-gradient(#0c2ce498, #2c0be99c), url(${BgHomeInitial});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -195,7 +203,7 @@ export const Card__technology = styled.li`
     align-items: center;
     transition: all 1s;
     &:hover {
-        background-image: linear-gradient(#470de698, #3511d321), url("https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-image: linear-gradient(#470de698, #3511d321), url(${HoverCard});
         background-size: cover;
         background-repeat: no-repeat;
         transform: scale(1.03);
@@ -203,7 +211,7 @@ export const Card__technology = styled.li`
     }
 `
 
-export const Card__title = styled.h2`
+export const CardTitle = styled.h2`
     text-align: center;
     background-color: #544aa377;
     border-radius: 10px;
@@ -213,7 +221,7 @@ export const Card__title = styled.h2`
     font-size: 22px;
 `
 
-export const Card__img = styled.img`
+export const CardImg = styled.img`
     width: auto;
     height: 110px;
 `

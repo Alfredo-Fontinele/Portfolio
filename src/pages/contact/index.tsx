@@ -1,4 +1,3 @@
-import { Container } from '../../components/container'
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaGoogle, FaYoutube } from 'react-icons/fa'
 import * as S from './style'
 
