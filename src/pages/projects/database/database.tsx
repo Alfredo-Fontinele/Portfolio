@@ -12,7 +12,7 @@ export const DATABASE_PROJECTS = [
     {
         name: "Gerador de Senha",
         image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/gerador_senha.png",
-        url: "https://app-gerador-de-senha.razyigarashi.repl.co/"
+        url: "https://password-generator-alfredo-fontinele.vercel.app/"
     },
     {
         name: "Harry Potter",
