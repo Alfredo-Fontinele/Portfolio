@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components"
 import Bg from '../../../src/assets/BGextra.webp'
-import { FadeInDown } from "../../animations";
+import { FadeInDown } from "../../animations"
 
 export const SectionAbout = styled.section`
     display: flex;

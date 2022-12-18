@@ -1,7 +1,7 @@
 import { AiFillProject } from 'react-icons/ai'
 import { BsFillPlayFill } from 'react-icons/bs'
 import { DATABASE } from './database/index'
-import logo from '../../../src/assets/perfil.jpg'
+import logo from '../../../src/assets/ALFREDO_NETO.jpeg'
 import * as S from './style'
 
 export const Home = () => (
@@ -9,7 +9,7 @@ export const Home = () => (
         <S.HomeInitial>
             <S.SectionWelcome>
                 <S.BegginsWelcome>
-                        <h1>I'm Front-end Developer</h1>
+                        <h1>I'm Full Stack Developer</h1>
                         <h2>Alfredo F. Neto</h2>
                 </S.BegginsWelcome>
                 <S.BiographyWelcome>

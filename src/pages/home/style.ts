@@ -1,17 +1,15 @@
-import styled from 'styled-components';
-import logo from '../../../src/assets/KRATOS.jpg'
+import styled from 'styled-components'
 import HoverCard from '../../../src/assets/HoverCard.webp'
-import BgHomeInitial from '../../../src/assets/KRATOS.jpg'
-import BGHomeTechs from '../../../src/assets/BGHomeTechs.jpg'
+import Background from '../../assets/BGextra.webp'
 import { Link } from 'react-router-dom'
-import { FlipIny, FadeLeft } from '../../animations';
+import { FlipIny, FadeLeft } from '../../animations'
 
 interface IPhoto {
     photo: string
 }
 
 export const Home = styled.main`
-    background-image: linear-gradient(#0000009d, #0000009d, #0000009d), url(${logo});
+    background-image: linear-gradient(#0000009d, #0000009d, #0000009d), url(${Background});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -58,7 +56,7 @@ export const BegginsWelcome = styled.div`
     }
 
     h2 {
-        font-size: 2.3em;
+        font-size: 2em;
         font-weight: 700;
         color: var(--grey-2);
     }
@@ -134,14 +132,14 @@ export const SectionPhoto = styled.section<IPhoto>`
     animation: 1s ${FlipIny};
     background-image: url(${({ photo }) => photo});
     background-size: cover;
+    background-position: center;
     border-radius: 20%;
-    min-height: 280px;
+    height: 300px;
     width: 280px;
 `
 
 export const Technologies = styled.section`
     background-color: rgb(10,20,40);
-    background-image: linear-gradient(#00000026,#00000044), url(${BGHomeTechs});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -186,7 +184,7 @@ export const TechnologiesList = styled.ul`
 `
 
 export const CardTechnology = styled.li`
-    background-image: linear-gradient(#0c2ce498, #2c0be99c), url(${BgHomeInitial});
+    background-image: linear-gradient(#0c2ce498, #2c0be99c), url(${Background});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
