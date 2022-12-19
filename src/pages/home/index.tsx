@@ -9,7 +9,7 @@ export const Home = () => (
         <S.HomeInitial>
             <S.SectionWelcome>
                 <S.BegginsWelcome>
-                        <h1>I'm Full Stack Developer</h1>
+                        <h1>I'm Front-End Developer</h1>
                         <h2>Alfredo F. Neto</h2>
                 </S.BegginsWelcome>
                 <S.BiographyWelcome>
