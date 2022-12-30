@@ -1,4 +1,10 @@
-export const DATABASE_PROJECTS = [
+interface IDB_Projects {
+    name: string
+    image: string
+    url: string
+}
+
+export const DATABASE_PROJECTS:IDB_Projects[] = [
     {
         name: "SongUp",
         image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/songup.png",

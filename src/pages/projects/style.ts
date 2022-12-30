@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from "styled-components"
 import HoverCard from '../../../src/assets/HoverCard.webp'
 import BgExtra from '../../../src/assets/BGextra.webp'
-import { FadeLeft } from "../../animations";
+import { FadeLeft } from "../../animations"
 
 export const SectionProjects = styled.section`
     width: 100%;

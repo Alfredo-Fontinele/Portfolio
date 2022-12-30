@@ -6,7 +6,7 @@ import { useContext } from 'react'
 import { StatesContext } from "./context/states"
 import { MenuLateral } from "./components/menuLateral"
 
-const App = () => {
+export const App = () => {
   const { statusMenu } = useContext(StatesContext)
   return (
     <Container>
@@ -19,5 +19,3 @@ const App = () => {
     </Container>
   )
 }
-
-export default App
