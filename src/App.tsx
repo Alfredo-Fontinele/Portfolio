@@ -10,7 +10,7 @@ const App = () => {
   const { statusMenu } = useContext(StatesContext)
   return (
     <Container>
-      {statusMenu && (
+      {!!statusMenu && (
         <MenuLateral/>
       )}
       <Header title="DevFólio_"/>

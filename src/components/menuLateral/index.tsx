@@ -5,12 +5,32 @@ import { CgUserList } from 'react-icons/cg'
 import { MdWork } from 'react-icons/md'
 import { GrContactInfo } from 'react-icons/gr'
 import { Link } from 'react-router-dom'
+import { MouseEvent, useEffect, useRef } from 'react'
 import { useMyStates } from '../../context/states'
+
+// interface IHandleOutClickEvent extends Event {
+//     target: Node | any
+// }
 
 export const MenuLateral = () => {
     const { setStatusMenu } = useMyStates()
+    const modal = useRef<HTMLDivElement | null>(null)
+
+    useEffect(() => {
+        const handleOutClick = (event: any) => {
+            const target = event.target
+            if (!modal.current?.contains(target)) {
+                setStatusMenu(false)
+            }
+        }
+        document.addEventListener('mousedown', handleOutClick)
+        return () => {
+            document.removeEventListener('mousedown', handleOutClick)
+        }
+    }, [])
+
     return (
-        <S.MenuLateral>
+        <S.MenuLateral ref={modal}>
             <S.BtnClose onClick={() => setStatusMenu(false)}/>
             <nav>
                 <ul>
