@@ -1,10 +1,14 @@
 import { Container } from '../../components/container'
+import { MdPersonPinCircle } from 'react-icons/md'
 import * as S from './style'
 
 export const About = () => (
     <S.SectionAbout>
         <S.About>
-            <S.AboutTitle>Sobre</S.AboutTitle>
+            <S.AboutTitle>
+                <MdPersonPinCircle/>
+                Sobre
+            </S.AboutTitle>
             <S.AboutText>
                 <S.AboutItem>
                     Olá. Me chamo Alfredo (20 anos) e sou estudante na Kenzie Academy Brasil. 

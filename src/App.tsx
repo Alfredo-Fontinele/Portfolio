@@ -1,10 +1,10 @@
+import { MenuLateral } from "./components/menuLateral"
 import { Container } from "./components/container"
+import { StatesContext } from "./context/states"
+import { RoutesGlobal } from "./routes/routes"
 import { Footer } from "./components/footer"
 import { Header } from "./components/header"
-import { RoutesGlobal } from "./routes/routes"
 import { useContext } from 'react'
-import { StatesContext } from "./context/states"
-import { MenuLateral } from "./components/menuLateral"
 
 export const App = () => {
   const { statusMenu } = useContext(StatesContext)

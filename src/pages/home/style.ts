@@ -153,9 +153,18 @@ export const Technologies = styled.section`
 `
 
 export const TechnologiesTitle = styled.h1`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     font-size: 45px;
     font-weight: 500;
     color: var(--primary);
+
+    svg {
+        font-size: 85px;
+        color: #fff;
+    }
 `
 
 export const TechnologiesList = styled.ul`

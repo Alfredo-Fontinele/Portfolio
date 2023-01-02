@@ -28,6 +28,15 @@ export const ProjectsTitle = styled.h1`
     font-weight: 500;
     text-align: center;
     color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    svg {
+        font-size: 45px;
+        color: #fff;
+    }
 `
 
 export const ProjectsList = styled.ul`

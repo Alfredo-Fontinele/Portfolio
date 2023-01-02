@@ -1,5 +1,6 @@
 import { AiFillProject } from 'react-icons/ai'
 import { BsFillPlayFill } from 'react-icons/bs'
+import { TbNotebook } from 'react-icons/tb'
 import { DATABASE } from './database/index'
 import logo from '../../../src/assets/ALFREDO_NETO.jpeg'
 import * as S from './style'
@@ -29,7 +30,10 @@ export const Home = () => (
             <S.SectionPhoto photo={logo}/>
         </S.HomeInitial>
         <S.Technologies>
-            <S.TechnologiesTitle>Tecnologias</S.TechnologiesTitle>
+            <S.TechnologiesTitle>
+                <TbNotebook/>
+                Tecnologias
+            </S.TechnologiesTitle>
             <S.TechnologiesList>
                 {DATABASE.map(({name, image}) => 
                     <S.CardTechnology key={crypto.randomUUID()}>
