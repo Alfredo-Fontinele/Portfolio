@@ -3,13 +3,23 @@ import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaGoogle, FaYoutube } fr
 import { IoShareSocialSharp } from 'react-icons/io5'
 import { MdOutlineEmail } from "react-icons/md"
 import { FiSend } from 'react-icons/fi'
+import { sendEmail } from './../../utils/sendEmail'
+import { useRef } from 'react'
 import * as S from './style'
 
 export const Contact = () => {
-    // const submitFormEmail = (e:FormEvent) => {
-    //     e.preventDefault()
-    //     alert("OI")
-    // }
+    const inputName = useRef<HTMLInputElement | null>(null)
+    const inputEmail = useRef<HTMLInputElement | null>(null)
+    const inputText = useRef<HTMLTextAreaElement | null>(null)
+
+    const submitFormEmail = async (e:FormEvent) => {
+        e.preventDefault()
+        const from = String(inputEmail.current?.value)
+        const subject = String(inputName.current?.value)
+        const text = String(inputText.current?.value)
+        // return await sendEmail({ from, subject, text })
+    }
+
     return (
         <S.SectionNetworkSocial>
             <S.NetworkSocial>
@@ -51,14 +61,15 @@ export const Contact = () => {
                         Contato
                     </S.ContactTitle>
                 </S.ContactTop>
-                <S.FormContact>
+                <S.FormContact onSubmit={submitFormEmail}>
                     <S.Label htmlFor="name">
-                        <S.Input type="text" name="name" placeholder="Insira seu nome" required />
+                        <S.Input type="text" ref={inputName} name="name" placeholder="Insira seu nome" required />
                     </S.Label>
                     <S.Label htmlFor="email">
-                        <S.Input type="text" name="email" placeholder="Insira seu email" required />
+                        <S.Input type="text" ref={inputEmail} name="email" placeholder="Insira seu email" required />
                     </S.Label>
                     <S.TextArea 
+                        ref={inputText}
                         name="text" 
                         cols={30} 
                         rows={10}
