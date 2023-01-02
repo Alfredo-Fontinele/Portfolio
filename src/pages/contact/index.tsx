@@ -14,7 +14,7 @@ export const Contact = () => (
                     <FaGithub/>
                     Github
                 </S.ContactItem>
-                <S.ContactItem target="_blank" href="https://mail.google.com/mail/u/0/#search/alfredofontinele08%40gmail.com?compose=CllgCJlDTRMcjhjBLKPBgCSWWPppHpMBHMQDRDkfLPRbmTbMFLlBbSxMpxGBHvgTTlRPTdgfWXq" bg="mediumslateblue">
+                <S.ContactItem target="_blank" href="https://mail.google.com/mail/u/0/#search/alfredofontinele08%40gmail.com?compose=GTvVlcSMVxdhgtxLcnnFdNfqXRzGxbxxRjcZfpfFTlQDPWVjfFXcnKltjFHGrNxcNHtrVlXzRxpdJ" bg="mediumslateblue">
                     <FaGoogle/>
                     Email
                 </S.ContactItem>
