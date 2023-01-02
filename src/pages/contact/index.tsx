@@ -1,18 +1,22 @@
 import { FormEvent } from 'react'
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaGoogle, FaYoutube } from 'react-icons/fa'
+import { IoShareSocialSharp } from 'react-icons/io5'
+import { MdOutlineEmail } from "react-icons/md"
 import { FiSend } from 'react-icons/fi'
-import { MdOutlineEmail } from 'react-icons/md'
 import * as S from './style'
 
 export const Contact = () => {
-    const submitFormEmail = (e:FormEvent) => {
-        e.preventDefault()
-        alert("OI")
-    }
+    // const submitFormEmail = (e:FormEvent) => {
+    //     e.preventDefault()
+    //     alert("OI")
+    // }
     return (
         <S.SectionNetworkSocial>
             <S.NetworkSocial>
-                <S.NetworkSocialTitle>Redes Sociais</S.NetworkSocialTitle>
+                <S.NetworkSocialTitle>
+                    <IoShareSocialSharp/>
+                    Redes Sociais
+                </S.NetworkSocialTitle>
                 <S.NetworkSocialList>
                     <S.NetworkSocialItem target="_blank" href="https://www.linkedin.com/in/alfredopfneto/" bg="#3447f7">
                         <FaLinkedin/>
@@ -42,10 +46,12 @@ export const Contact = () => {
             </S.NetworkSocial>
             <S.SectionContact>
                 <S.ContactTop>
-                    <S.EmailItem/>
-                    <S.ContactTitle>Contato</S.ContactTitle>
+                    <S.ContactTitle>
+                        <MdOutlineEmail/>
+                        Contato
+                    </S.ContactTitle>
                 </S.ContactTop>
-                <S.FormContact onSubmit={submitFormEmail}>
+                <S.FormContact>
                     <S.Label htmlFor="name">
                         <S.Input type="text" name="name" placeholder="Insira seu nome" required />
                     </S.Label>

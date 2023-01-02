@@ -1,4 +1,3 @@
-import { MdOutlineEmail } from "react-icons/md";
 import styled from "styled-components";
 import { FlipIny } from "../../animations";
 
@@ -25,10 +24,19 @@ export const NetworkSocial = styled.section`
 `
 
 export const NetworkSocialTitle = styled.h1`
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     text-align: center;
     color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    svg {
+        color: #fff;
+        font-size: 35px;
+    }
 `
 
 export const NetworkSocialList = styled.ul`
@@ -85,22 +93,26 @@ export const ContactTop = styled.div`
 `
 
 export const ContactTitle = styled.h1`
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     text-align: center;
     color: var(--primary);
-`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-export const EmailItem = styled(MdOutlineEmail)`
-    font-size: 75px;
-    color: #fff;
+    svg {
+        color: #fff;
+        font-size: 50px;
+    }
 `
 
 export const FormContact = styled.form`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1.3rem;
+    padding: 1rem;
     width: 100%;
     max-width: 750px;
     border-radius: 8px;
@@ -114,7 +126,7 @@ export const Label = styled.label`
 
 export const Input = styled.input`
     padding: 1rem;
-    font-size: 18px;
+    font-size: 16px;
     color: #ccc;
     width: 100%;
     border-radius: 8px;
@@ -124,7 +136,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
     padding: 1rem;
-    font-size: 18px;
+    font-size: 16px;
     color: #ccc;
     border-radius: 8px;
     resize: none;
@@ -137,8 +149,9 @@ export const ButtonSubmit = styled.button`
     font-size: 20px;
     border-radius: 8px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     font-weight: bold;
+    font-size: 17px;
     color: #fff;
     display: flex;
     justify-content: center;

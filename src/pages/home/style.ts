@@ -157,12 +157,12 @@ export const TechnologiesTitle = styled.h1`
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    font-size: 45px;
+    font-size: 2.5rem;
     font-weight: 500;
     color: var(--primary);
 
     svg {
-        font-size: 85px;
+        font-size: 50px;
         color: #fff;
     }
 `
