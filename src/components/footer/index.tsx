@@ -20,7 +20,7 @@ export const Footer = ({ title }:ITitle) => (
                 </S.FooterSocial>
             </S.FooterIcons>
             <S.FooterDeveloper>
-                <h3>&copy;{title} 2022</h3>
+                <h3>&copy;{title} 2023</h3>
             </S.FooterDeveloper>
         </S.FooterContainer>
     </S.Footer>
