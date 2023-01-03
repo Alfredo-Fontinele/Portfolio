@@ -5,11 +5,13 @@ import { RoutesGlobal } from "./routes/routes"
 import { Footer } from "./components/footer"
 import { Header } from "./components/header"
 import { useContext } from 'react'
+import { ToastProvider } from './components/toast'
 
 export const App = () => {
   const { statusMenu } = useContext(StatesContext)
   return (
     <Container>
+      <ToastProvider/>
       {!!statusMenu && (
         <MenuLateral/>
       )}

@@ -1,14 +1,12 @@
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaGoogle, FaYoutube } from 'react-icons/fa'
-import { IoShareSocialSharp } from 'react-icons/io5'
 import { MdOutlineEmail } from "react-icons/md"
+import { IoShareSocialSharp } from 'react-icons/io5'
 import { FiSend } from 'react-icons/fi'
-import emailjs from '@emailjs/browser'
 import { FormEvent } from 'react'
 import { useRef } from 'react'
-import { useForm } from "react-hook-form"
-import { yupResolver } from '@hookform/resolvers/yup'
+import { toast } from 'react-toastify'
+import emailjs from '@emailjs/browser'
 import * as S from './style'
-import { FormSchema } from '../../schemas/form'
 
 const USER_ADMIN = {
     public_key: '21sqNXSXvyqja_de1',
@@ -21,10 +19,12 @@ export const Contact = () => {
     const inputEmail = useRef<HTMLInputElement | null>(null)
     const inputMessage = useRef<HTMLTextAreaElement | null>(null)
     const form = useRef<any>()
-    
-    const { register, handleSubmit, formState: { errors } } = useForm({
-        resolver: yupResolver(FormSchema)
-    })    
+
+    const clear = () => {
+        inputEmail.current!.value = ''
+        inputName.current!.value = ''
+        inputMessage.current!.value = ''
+    }
 
     const sendEmail = async (e:FormEvent) => {
         e.preventDefault()
@@ -32,7 +32,7 @@ export const Contact = () => {
         const from_name = inputName.current?.value
         const message = inputMessage.current?.value
         if (!email || !from_name || !message) {
-            alert('Preencha todos os campos')
+            toast.error('Preencha todos os campos')
             return
         }
         emailjs.sendForm(
@@ -41,12 +41,11 @@ export const Contact = () => {
             form.current,
             USER_ADMIN.public_key
         )
-        .then((result) => {
-            console.log(`Email enviado com sucesso => ${result.text}`)
-            inputEmail.current!.value = ''
-            inputName.current!.value = ''
-            inputMessage.current!.value = ''
-        }, (error) => {
+        .then(() => {
+            toast.success("Email Enviado ✅")
+            clear()
+        })
+        .catch((error) => {
             console.log(error.text)
         })
     }

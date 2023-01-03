@@ -168,7 +168,6 @@ export const ButtonSubmit = styled.button`
     &:hover {
         color: #fff;
         border: 3px solid #fff;
-        box-shadow: 1px 1px 10px #fff;
         background-color: #4444;
     }
 `
