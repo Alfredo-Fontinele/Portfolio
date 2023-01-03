@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { FlipIny } from "../../animations";
+import styled from "styled-components"
+import { FlipIny } from "../../animations"
 
 interface INetworkSocialItem {
     bg: string
@@ -127,7 +127,7 @@ export const Label = styled.label`
 export const Input = styled.input`
     padding: 1rem;
     font-size: 16px;
-    color: #ccc;
+    color: #ddd;
     width: 100%;
     border-radius: 8px;
     transition: all 0.7s;
@@ -137,7 +137,7 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
     padding: 1rem;
     font-size: 16px;
-    color: #ccc;
+    color: #ddd;
     border-radius: 8px;
     resize: none;
     transition: all 0.7s;
@@ -166,7 +166,9 @@ export const ButtonSubmit = styled.button`
     }
 
     &:hover {
-        border: 3px solid mediumslateblue;
+        color: #fff;
+        border: 3px solid #fff;
+        box-shadow: 1px 1px 10px #fff;
         background-color: #4444;
     }
 `
