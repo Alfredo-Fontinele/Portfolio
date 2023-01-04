@@ -8,10 +8,6 @@ import { Link } from 'react-router-dom'
 import { MouseEvent, useEffect, useRef } from 'react'
 import { useMyStates } from '../../context/states'
 
-// interface IHandleOutClickEvent extends Event {
-//     target: Node | any
-// }
-
 export const MenuLateral = () => {
     const { setStatusMenu } = useMyStates()
     const modal = useRef<HTMLDivElement | null>(null)
@@ -31,7 +27,6 @@ export const MenuLateral = () => {
 
     return (
         <S.MenuLateral ref={modal}>
-            <S.BtnClose onClick={() => setStatusMenu(false)}/>
             <nav>
                 <ul>
                     <li>

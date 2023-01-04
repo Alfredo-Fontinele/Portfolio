@@ -1,4 +1,3 @@
-import { Container } from '../../components/container'
 import { MdPersonPinCircle } from 'react-icons/md'
 import * as S from './style'
 

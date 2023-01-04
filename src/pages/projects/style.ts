@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import HoverCard from '../../../src/assets/HoverCard.webp'
-import BgExtra from '../../../src/assets/BGextra.webp'
-import { FadeLeft } from "../../animations"
+import HoverCard from '../../../src/assets/background/HoverCard.webp'
+import BgExtra from '../../../src/assets/background/BGextra.webp'
 
 export const SectionProjects = styled.section`
     width: 100%;
@@ -64,7 +63,6 @@ export const ProjectsList = styled.ul`
 `
 
 export const CardProject = styled.a`
-    animation: 1s ${FadeLeft};
     background-image: linear-gradient(#22292393, #135be29f), url(${BgExtra});
     background-position: center;
     background-size: cover;

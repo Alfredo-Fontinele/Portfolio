@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"
+import { MoveTopDown } from "../../animations"
 
 export const Footer = styled.footer`
     height: 300px;
@@ -67,7 +68,7 @@ export const FooterIcons = styled.div`
 `
 
 export const FooterDeveloper = styled.div`
-    animation: logo 7s infinite;
+    animation: ${MoveTopDown} 7s infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,17 +80,7 @@ export const FooterDeveloper = styled.div`
         font-size: 22px;
         color: var(--grey-1);
     }
-    @keyframes logo {
-        0% {
-            transform: translateY(-5px);
-        }
-        50% {
-            transform: translateY(5px);
-        }
-        100% {
-            transform: translateY(-5px);
-        }
-    }
+
     @media only screen and (max-width: 670px) {
         h3 {
             font-size: 18px;

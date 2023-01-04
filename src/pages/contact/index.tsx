@@ -1,12 +1,12 @@
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaGoogle, FaYoutube } from 'react-icons/fa'
-import { MdOutlineEmail } from "react-icons/md"
 import { IoShareSocialSharp } from 'react-icons/io5'
+import { MdOutlineEmail } from "react-icons/md"
 import { FiSend } from 'react-icons/fi'
+import { toast } from 'react-toastify'
 import { FormEvent } from 'react'
 import { useRef } from 'react'
-import { toast } from 'react-toastify'
-import emailjs from '@emailjs/browser'
 import * as S from './style'
+import emailjs from '@emailjs/browser'
 
 const USER_ADMIN = {
     public_key: '21sqNXSXvyqja_de1',
@@ -84,7 +84,7 @@ export const Contact = () => {
                 <S.ContactTop>
                     <S.ContactTitle>
                         <MdOutlineEmail/>
-                        Contato
+                        Entre em Contato
                     </S.ContactTitle>
                 </S.ContactTop>
                 <S.FormContact ref={form} onSubmit={sendEmail}>

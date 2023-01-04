@@ -1,15 +1,16 @@
-import styled from 'styled-components'
-import HoverCard from '../../../src/assets/HoverCard.webp'
-import Background from '../../assets/BGextra.webp'
+import { FlipIny, FadeLeft, MoveTopDown } from '../../animations'
+import HoverCard from '../../../src/assets/background/HoverCard.webp'
+import BleachBg from '../../../src/assets/background/BG_BLEACH.png'
+import styled, { keyframes } from 'styled-components'
+import { MdKeyboardArrowDown } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-import { FlipIny, FadeLeft } from '../../animations'
 
 interface IPhoto {
     photo: string
 }
 
 export const Home = styled.main`
-    background-image: linear-gradient(#0000009d, #0000009d, #0000009d), url(${Background});
+    background-image: linear-gradient(#0000009d, #0000009d, #0000009d), url(${BleachBg});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,14 +18,16 @@ export const Home = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
 `
 
 export const HomeInitial = styled.section`
     min-height: 700px;
     padding: 0 1rem;
     display: flex;
-    justify-content: space-around;
+    padding: 5rem 0 0 0;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     @media only screen and (max-width: 900px) {
@@ -32,15 +35,43 @@ export const HomeInitial = styled.section`
         flex-direction: column;
         gap: 70px;
     }
+
+    @media only screen and (max-width: 450px) {
+        gap: .5rem;
+    }
+`
+
+export const SectionFirst = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 0;
+    width: 100%;
+
+    @media only screen and (max-width: 930px) {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+        padding: 0;
+    }
 `
 
 export const SectionWelcome = styled.section`
     animation: 1s ${FadeLeft};
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 50px;
     width: 100%;
     max-width: 500px;
+`
+
+export const ArrowSet = styled(MdKeyboardArrowDown)`
+    animation: ${MoveTopDown} 4s infinite;
+    color: #fff;
+    font-size: 85px;
 `
 
 export const BegginsWelcome = styled.div`
@@ -193,7 +224,7 @@ export const TechnologiesList = styled.ul`
 `
 
 export const CardTechnology = styled.li`
-    background-image: linear-gradient(#0c2ce498, #2c0be99c), url(${Background});
+    background-image: linear-gradient(#0c2ce498, #2c0be99c), url(${BleachBg});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

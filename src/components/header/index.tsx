@@ -1,10 +1,9 @@
-import * as S from './style'
-import { useContext } from 'react'
-import { StatesContext } from '../../context/states'
+import { useMyStates } from '../../context/states'
 import { ITitle } from '../../interfaces/title'
+import * as S from './style'
 
 export const Header = ({ title }:ITitle) => {
-    const { setStatusMenu } = useContext(StatesContext)
+    const { setStatusMenu } = useMyStates()
     return (
         <S.Header>
             <S.HeaderTitle>{title}</S.HeaderTitle>

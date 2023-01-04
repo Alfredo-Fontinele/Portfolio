@@ -1,3 +1,15 @@
+import ReactJS from '../../../../src/assets/technologies/React-icon.svg.png'
+import NextJS from '../../../../src/assets/technologies/next-js.svg'
+import ChakraUI from '../../../../src/assets/technologies/chakra.png'
+import NodeJS from '../../../../src/assets/technologies/nodejs.png'
+import Git from '../../../../src/assets/technologies/git.png'
+import Django from '../../../../src/assets/technologies/django.png'
+import Jest from '../../../../src/assets/technologies/jest.png'
+import TypeScript from '../../../../src/assets/technologies/Typescript_logo_2020.svg.png'
+import PostgreSQL from '../../../../src/assets/technologies/postgresql-logo.webp'
+import TypeORM from '../../../../src/assets/technologies/typeorm.jpg'
+import Prisma from '../../../../src/assets/technologies/prisma.png'
+
 interface IDB {
     name: string
     image: string
@@ -6,15 +18,15 @@ interface IDB {
 export const DATABASE:IDB[] = [
     {
         name: "ReactJS",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+        image: ReactJS
     },
     {
         name: "NextJS",
-        image: "https://cdn.cdnlogo.com/logos/n/80/next-js.svg"
+        image: NextJS
     },
     {
         name: "ChakraUI",
-        image: "https://avatars.githubusercontent.com/u/54212428?s=280&v=4"
+        image: ChakraUI
     },
     // {
     //     name: "Tawlind CSS",
@@ -22,7 +34,7 @@ export const DATABASE:IDB[] = [
     // },
     {
         name: "NodeJS",
-        image: "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+        image: NodeJS
     },
     // {
     //     name: "NestJS",
@@ -30,23 +42,23 @@ export const DATABASE:IDB[] = [
     // },
     {
         name: "TypeScript",
-        image: "https://bognarjunior.files.wordpress.com/2018/09/typescript.png"
+        image: TypeScript
     },
     {
         name: "PostgreSQL",
-        image: "https://i1.wp.com/www.bacula.lat/wp-content/uploads/2019/05/postgresql-logo.png"
+        image: PostgreSQL
     },
     {
         name: "TypeORM",
-        image: "https://archive.org/download/github.com-typeorm-typeorm_-_2022-02-02_15-54-36/cover.jpg"
+        image: TypeORM
     },
      {
         name: "Prisma",
-        image: "https://avatars.githubusercontent.com/u/17219288?s=280&v=4"
+        image: Prisma
     },
     {
         name: "Jest",
-        image: "https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png"
+        image: Jest
     },
     // {
     //     name: "MongoDB",
@@ -58,10 +70,10 @@ export const DATABASE:IDB[] = [
     // },
     {
         name: "Django",
-        image: "https://seeklogo.com/images/D/django-logo-F46C1DD95E-seeklogo.com.png"
+        image: Django
     },
     {
         name: "Git",
-        image: "https://miro.medium.com/max/383/1*co_1qORNdM0PI1nvCp7Iig.png"
+        image: Git
     }
 ]

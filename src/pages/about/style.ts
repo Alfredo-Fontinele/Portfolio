@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Bg from '../../../src/assets/BGextra.webp'
+import Bg from '../../../src/assets/background/BGextra.webp'
 import { FadeInDown } from "../../animations"
 
 export const SectionAbout = styled.section`
