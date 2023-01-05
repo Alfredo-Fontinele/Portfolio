@@ -34,6 +34,10 @@ export const AboutTitle = styled.h1`
         font-size: 35px;
         color: #fff;
     }
+
+    @media only screen and (max-width: 400px) {
+        flex-direction: column-reverse;
+    }
 `
 
 export const AboutText = styled.ul`
@@ -49,9 +53,10 @@ export const AboutText = styled.ul`
 export const AboutItem = styled.li`
     animation: 1s ${FadeInDown};
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 2rem;
     border-radius: 10px;
+    line-height: 40px;
     background: #141E30;
     background: -webkit-linear-gradient(to left, #243B55, #141E30);
     background: linear-gradient(to left, #243B55, #141E30); 

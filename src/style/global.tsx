@@ -6,9 +6,10 @@ export const GlobalStyle = createGlobalStyle`
         --grey-1: mediumspringgreen;
         --grey-2: mediumslateblue;
         --grey-3: rgb(0, 125, 255);
-        --grey-4: #CCC;
+        --grey-4: #ddd;
         --grey-5: #333;
         --grey-6: #222;
+        --grey-7: #4444;
     }
 
     * {

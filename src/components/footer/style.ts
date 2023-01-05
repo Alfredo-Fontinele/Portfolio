@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { MoveTopDown } from "../../animations"
 
 export const Footer = styled.footer`
-    height: 300px;
+    height: 250px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ export const FooterDeveloper = styled.div`
     gap: 10px;
     h3 {
         font-size: 22px;
-        color: var(--grey-1);
+        color: var(--primary);
     }
 
     @media only screen and (max-width: 670px) {

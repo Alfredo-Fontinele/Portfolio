@@ -15,7 +15,11 @@ export const Home = () => (
                             <h2>Alfredo F. Neto</h2>
                     </S.BegginsWelcome>
                     <S.BiographyWelcome>
-                        <p>Atualmente tenho 20 anos e sou estudante na Kenzie Academy Brasil no curso de Desenvolvimento Full Stack</p>
+                        <p>
+                            Dev Front-End formado pela escola de programação 
+                            Kenzie Academy Brasil no curso de Desenvolvimento Full Stack.
+                            Atualmente quase formado como Dev Back-End
+                        </p>
                     </S.BiographyWelcome>
                     <S.BtnsWelcome>
                         <S.BtnProjects to="/projects">

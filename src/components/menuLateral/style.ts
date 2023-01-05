@@ -7,7 +7,7 @@ export const MenuLateral = styled.div`
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 60%);
+    width: calc(100% - 50%);
     max-width: 300px;
     min-height: 100vh;
     z-index: 9999;

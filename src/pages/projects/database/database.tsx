@@ -32,16 +32,16 @@ export const DATABASE_PROJECTS:IDB_Projects[] = [
         image: ShopNow,
         url: "https://kenzie-academy-brasil-developers.github.io/entrega-lista-produtos-m2-sprint-1b-Alfredo-Fontinele/"
     },
-    // {
-    //     name: "Kenzie Clone",
-    //     image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie.png",
-    //     url: "https://clone-kenzy-academy.vercel.app/"
-    // },
-    // {
-    //     name: "Kenzie Posts",
-    //     image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie_posts.png",
-    //     url: "https://posts-news-kenzie.vercel.app/"
-    // },
+    {
+        name: "Kenzie Clone",
+        image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie.png",
+        url: "https://clone-kenzy-academy.vercel.app/"
+    },
+    {
+        name: "Kenzie Posts",
+        image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie_posts.png",
+        url: "https://posts-news-kenzie.vercel.app/"
+    },
     {
         name: "Todo List",
         image: TodoList,

@@ -14,7 +14,7 @@ export const SectionNetworkSocial = styled.section`
 
 export const NetworkSocial = styled.section`
     width: 100%;
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
     gap: 4rem;
     min-height: inherit;
     display: flex;
@@ -34,17 +34,22 @@ export const NetworkSocialTitle = styled.h1`
     gap: 1rem;
 
     svg {
-        color: #fff;
-        font-size: 35px;
+        color: var(--primary);
+        font-size: 45px;
+    }
+
+    @media only screen and (max-width: 400px) {
+        flex-direction: column-reverse;
     }
 `
 
 export const NetworkSocialList = styled.ul`
     width: 100%;
+    max-width: 700px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2.5rem;
 `
 
@@ -57,7 +62,7 @@ export const NetworkSocialItem = styled.a<INetworkSocialItem>`
     font-weight: 600;
     font-size: 18px;
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     padding: 1rem 2rem;
     color: var(--primary);
     border-radius: 10px;
@@ -103,8 +108,12 @@ export const ContactTitle = styled.h1`
     gap: 1rem;
 
     svg {
-        color: #fff;
+        color: var(--primary);
         font-size: 50px;
+    }
+
+    @media only screen and (max-width: 400px) {
+        flex-direction: column-reverse;
     }
 `
 
@@ -127,21 +136,21 @@ export const Label = styled.label`
 export const Input = styled.input`
     padding: 1rem;
     font-size: 16px;
-    color: #ddd;
+    color: var(--grey-4);
     width: 100%;
     border-radius: 8px;
     transition: all 0.7s;
-    background-color: #4444;
+    background-color: var(--grey-7);
 `
 
 export const TextArea = styled.textarea`
     padding: 1rem;
     font-size: 16px;
-    color: #ddd;
+    color: var(--grey-4);
     border-radius: 8px;
     resize: none;
     transition: all 0.7s;
-    background-color: #4444;
+    background-color: var(--grey-7);
 `
 
 export const ButtonSubmit = styled.button`
@@ -152,7 +161,7 @@ export const ButtonSubmit = styled.button`
     max-width: 250px;
     font-weight: bold;
     font-size: 17px;
-    color: #fff;
+    color: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,12 +171,12 @@ export const ButtonSubmit = styled.button`
 
     svg {
         font-size: 25px;
-        color: #fff;
+        color: var(--primary);
     }
 
     &:hover {
-        color: #fff;
+        color: var(--primary);
         border: 3px solid #fff;
-        background-color: #4444;
+        background-color: var(--grey-7);
     }
 `

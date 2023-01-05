@@ -1,6 +1,6 @@
 import { FlipIny, FadeLeft, MoveTopDown } from '../../animations'
 import HoverCard from '../../../src/assets/background/HoverCard.webp'
-import BleachBg from '../../../src/assets/background/BG_BLEACH.png'
+import BGDark from '../../../src/assets/background/BGextra.webp'
 import styled, { keyframes } from 'styled-components'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { Link } from 'react-router-dom'
@@ -10,7 +10,7 @@ interface IPhoto {
 }
 
 export const Home = styled.main`
-    background-image: linear-gradient(#0000009d, #0000009d, #0000009d), url(${BleachBg});
+    background-image: linear-gradient(#0000009d, #0000009d, #0000009d), url(${BGDark});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -95,6 +95,8 @@ export const BegginsWelcome = styled.div`
 
 export const BiographyWelcome = styled.div`
     p {
+        font-weight: 600;
+        font-size: 18px;
         line-height: 30px;
         letter-spacing: .5px;
         color: var(--grey-4);
@@ -196,6 +198,10 @@ export const TechnologiesTitle = styled.h1`
         font-size: 50px;
         color: #fff;
     }
+
+    @media only screen and (max-width: 400px) {
+        flex-direction: column-reverse;
+    }
 `
 
 export const TechnologiesList = styled.ul`
@@ -224,7 +230,7 @@ export const TechnologiesList = styled.ul`
 `
 
 export const CardTechnology = styled.li`
-    background-image: linear-gradient(#0c2ce498, #2c0be99c), url(${BleachBg});
+    background-image: linear-gradient(#0c2ce498, #2c0be99c), url(${BGDark});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

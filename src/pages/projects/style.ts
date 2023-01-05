@@ -36,10 +36,15 @@ export const ProjectsTitle = styled.h1`
         font-size: 25px;
         color: #fff;
     }
+
+    @media only screen and (max-width: 400px) {
+        flex-direction: column-reverse;
+    }
 `
 
 export const ProjectsList = styled.ul`
     width: 100%;
+    max-width: 1500px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
