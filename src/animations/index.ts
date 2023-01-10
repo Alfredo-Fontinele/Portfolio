@@ -1,5 +1,5 @@
-import { keyframes } from 'styled-components'
 import { fadeInDown, fadeInLeft, flipInY, fadeInRight } from 'react-animations'
+import { keyframes } from 'styled-components'
 
 export const FadeLeft = keyframes`${fadeInLeft}`
 export const FadeInDown = keyframes`${fadeInDown}`

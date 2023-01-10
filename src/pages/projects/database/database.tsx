@@ -13,43 +13,43 @@ interface IDB_Projects {
 
 export const DATABASE_PROJECTS:IDB_Projects[] = [
     {
-        name: "SongUp",
+        name: 'SongUp',
         image: SongUp,
-        url: "https://song-up-alfredo-fontinele.vercel.app/"
+        url: 'https://song-up-alfredo-fontinele.vercel.app/'
     },
     {
-        name: "Foodbox",
+        name: 'Foodbox',
         image: FoodBox,
-        url: "https://foodbox.razyigarashi.repl.co/"
+        url: 'https://foodbox.razyigarashi.repl.co/'
     },
     {
-        name: "Gerador de Senha",
+        name: 'Gerador de Senha',
         image: PasswordGenerator,
-        url: "https://password-generator-alfredo-fontinele.vercel.app/"
+        url: 'https://password-generator-alfredo-fontinele.vercel.app/'
     },
     {
-        name: "Shop Now",
+        name: 'Shop Now',
         image: ShopNow,
-        url: "https://kenzie-academy-brasil-developers.github.io/entrega-lista-produtos-m2-sprint-1b-Alfredo-Fontinele/"
+        url: 'https://kenzie-academy-brasil-developers.github.io/entrega-lista-produtos-m2-sprint-1b-Alfredo-Fontinele/'
     },
     {
-        name: "Kenzie Clone",
-        image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie.png",
-        url: "https://clone-kenzy-academy.vercel.app/"
+        name: 'Kenzie Clone',
+        image: 'https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie.png',
+        url: 'https://clone-kenzy-academy.vercel.app/'
     },
     {
-        name: "Kenzie Posts",
-        image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie_posts.png",
-        url: "https://posts-news-kenzie.vercel.app/"
+        name: 'Kenzie Posts',
+        image: 'https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie_posts.png',
+        url: 'https://posts-news-kenzie.vercel.app/'
     },
     {
-        name: "Todo List",
+        name: 'Todo List',
         image: TodoList,
-        url: "https://todo-list-plum-one.vercel.app/"
+        url: 'https://todo-list-plum-one.vercel.app/'
     },
     {
-        name: "Calculadora",
+        name: 'Calculadora',
         image: Calculator,
-        url: "https://calculadora-grid-beta.vercel.app/"
+        url: 'https://calculadora-grid-beta.vercel.app/'
     }
 ]

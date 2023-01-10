@@ -1,12 +1,12 @@
-import * as S from './style'
-import { HiOutlineHome } from 'react-icons/hi'
-import { BiConversation } from 'react-icons/bi'
-import { CgUserList } from 'react-icons/cg'
-import { MdWork } from 'react-icons/md'
-import { GrContactInfo } from 'react-icons/gr'
-import { Link } from 'react-router-dom'
 import { MouseEvent, useEffect, useRef } from 'react'
 import { useMyStates } from '../../context/states'
+import { BiConversation } from 'react-icons/bi'
+import { GrContactInfo } from 'react-icons/gr'
+import { HiOutlineHome } from 'react-icons/hi'
+import { CgUserList } from 'react-icons/cg'
+import { MdWork } from 'react-icons/md'
+import { Link } from 'react-router-dom'
+import * as S from './style'
 
 export const MenuLateral = () => {
     const { setStatusMenu } = useMyStates()

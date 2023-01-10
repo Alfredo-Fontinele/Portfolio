@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const ModalContainer = styled.div`
+export const Modal = styled.div`
     position: fixed;
     top: 0;
     left: 0;

@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { MoveTopDown } from "../../animations"
+import styled from 'styled-components'
+import { MoveTopDown } from '../../animations'
 
 export const Footer = styled.footer`
     height: 250px;

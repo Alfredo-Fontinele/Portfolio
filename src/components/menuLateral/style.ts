@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import { IoMdClose } from 'react-icons/io'
-import { FadeInRight } from "../../animations";
+import { FadeInRight } from '../../animations'
 
 export const MenuLateral = styled.div`
     animation: 0.5s ${FadeInRight};
