@@ -3,6 +3,7 @@ import HoverCard from '../../../src/assets/background/HoverCard.webp'
 import BGDark from '../../../src/assets/background/BGextra.webp'
 import styled, { keyframes } from 'styled-components'
 import { MdKeyboardArrowDown } from 'react-icons/md'
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 interface IPhoto {
@@ -204,7 +205,7 @@ export const TechnologiesTitle = styled.h1`
     }
 `
 
-export const TechnologiesList = styled.ul`
+export const TechnologiesList = styled(motion.ul)`
     width: 100%;
     height: 100%;
     display: flex;
@@ -229,7 +230,7 @@ export const TechnologiesList = styled.ul`
     }
 `
 
-export const CardTechnology = styled.li`
+export const CardTechnology = styled(motion.li)`
     background-image: linear-gradient(#0c2ce498, #2c0be99c), url(${BGDark});
     background-size: cover;
     background-repeat: no-repeat;

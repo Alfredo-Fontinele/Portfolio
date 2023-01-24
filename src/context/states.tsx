@@ -6,7 +6,7 @@ interface IContextState {
     setStatusMenu: Dispatch<SetStateAction<boolean>>
 }
 
-export const StatesContext = createContext<IContextState>({} as IContextState)
+const StatesContext = createContext<IContextState>({} as IContextState)
 
 export const StatesProvider = ({ children }:IChildren) => {
     const [statusMenu, setStatusMenu] = useState(false)

@@ -1,6 +1,7 @@
-import styled from "styled-components"
 import HoverCard from '../../../src/assets/background/HoverCard.webp'
 import BgExtra from '../../../src/assets/background/BGextra.webp'
+import styled from "styled-components"
+import { motion } from 'framer-motion'
 
 export const SectionProjects = styled.section`
     width: 100%;
@@ -42,7 +43,7 @@ export const ProjectsTitle = styled.h1`
     }
 `
 
-export const ProjectsList = styled.ul`
+export const ProjectsList = styled(motion.ul)`
     width: 100%;
     max-width: 1500px;
     height: 100%;
@@ -67,7 +68,7 @@ export const ProjectsList = styled.ul`
     }
 `
 
-export const CardProject = styled.a`
+export const CardProject = styled(motion.a)`
     background-image: linear-gradient(#22292393, #135be29f), url(${BgExtra});
     background-position: center;
     background-size: cover;
