@@ -208,6 +208,7 @@ export const TechnologiesTitle = styled.h1`
 export const TechnologiesList = styled(motion.ul)`
     width: 100%;
     height: 100%;
+    max-width: 1600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

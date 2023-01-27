@@ -35,7 +35,7 @@ export const Contact = () => {
             toast.error('Preencha todos os campos')
             return
         }
-        emailjs.sendForm(
+        return await emailjs.sendForm(
             USER_ADMIN.service_id, 
             USER_ADMIN.template_id, 
             form.current,
@@ -70,10 +70,10 @@ export const Contact = () => {
                         <FaWhatsapp/>
                         Telefone
                     </S.NetworkSocialItem>
-                    <S.NetworkSocialItem target="_blank" href="https://www.instagram.com/alfredo_fontinele/" bg="#d428cc">
+                    {/* <S.NetworkSocialItem target="_blank" href="https://www.instagram.com/alfredo_fontinele/" bg="#d428cc">
                         <FaInstagram/>
                         Instagram
-                    </S.NetworkSocialItem>
+                    </S.NetworkSocialItem> */}
                     <S.NetworkSocialItem target="_blank" href="https://www.youtube.com/channel/UCHGyhE14Wc_WqvPD3QjmywA" bg="#fc0800">
                         <FaYoutube/>
                         Youtube

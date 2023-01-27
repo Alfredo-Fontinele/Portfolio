@@ -20,10 +20,10 @@ export const DATABASE:IDB[] = [
         name: 'ReactJS',
         image: ReactJS
     },
-    {
-        name: 'NextJS',
-        image: NextJS
-    },
+    // {
+    //     name: 'NextJS',
+    //     image: NextJS
+    // },
     {
         name: 'ChakraUI',
         image: ChakraUI
@@ -36,10 +36,10 @@ export const DATABASE:IDB[] = [
         name: 'NodeJS',
         image: NodeJS
     },
-    // {
-    //     name: 'NestJS',
-    //     image: 'https://seeklogo.com/images/N/nestjs-logo-09342F76C0-seeklogo.com.png'
-    // },
+    {
+        name: 'NestJS',
+        image: 'https://seeklogo.com/images/N/nestjs-logo-09342F76C0-seeklogo.com.png'
+    },
     {
         name: 'TypeScript',
         image: TypeScript

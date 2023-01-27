@@ -48,7 +48,6 @@ export const Home = () => {
                     variants={listMotion}
                     initial="hidden"
                     animate="show"
-                    whileTap={{ scale: 0.9 }}
                     whileInView={{ opacity: 1 }}
                 >
                     {DATABASE.map(({name, image}) => 

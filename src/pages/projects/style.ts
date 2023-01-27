@@ -24,7 +24,7 @@ export const Projects = styled.section`
 `
 
 export const ProjectsTitle = styled.h1`
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     text-align: center;
     color: var(--primary);
@@ -34,7 +34,7 @@ export const ProjectsTitle = styled.h1`
     gap: 1rem;
 
     svg {
-        font-size: 25px;
+        font-size: 35px;
         color: #fff;
     }
 
@@ -77,15 +77,14 @@ export const CardProject = styled(motion.a)`
     border-radius: 10px;
     width: 100%;
     height: 100%;
-    min-width: 270px;
-    max-width: 270px;
-    min-height: 350px;
-    padding: 10px;
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 360px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     gap: 30px;
     transition: all 1s;
     &:hover {
@@ -112,4 +111,11 @@ export const CardImg = styled.img`
     object-fit: cover;
     width: 100%;
     height: 130px;
+`
+
+export const CardDescription = styled.li`
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #e5e5e5;
+    text-align: center;
 `
