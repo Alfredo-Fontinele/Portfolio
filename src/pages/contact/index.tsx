@@ -7,6 +7,7 @@ import { toast } from 'react-toastify'
 import { FormEvent } from 'react'
 import { useRef } from 'react'
 import * as S from './style'
+import { ArrowSet } from './../home/style';
 
 const USER_ADMIN = {
     public_key: '21sqNXSXvyqja_de1',
@@ -79,6 +80,7 @@ export const Contact = () => {
                         Youtube
                     </S.NetworkSocialItem>
                 </S.NetworkSocialList>
+                <ArrowSet/>
             </S.NetworkSocial>
             <S.SectionContact>
                 <S.ContactTop>

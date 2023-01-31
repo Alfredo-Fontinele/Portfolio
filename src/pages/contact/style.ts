@@ -15,7 +15,7 @@ export const SectionNetworkSocial = styled.section`
 export const NetworkSocial = styled.section`
     width: 100%;
     padding: 4rem 2rem;
-    gap: 4rem;
+    gap: 3.5rem;
     min-height: inherit;
     display: flex;
     flex-direction: column;

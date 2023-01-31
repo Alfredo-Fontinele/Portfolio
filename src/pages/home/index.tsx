@@ -2,7 +2,7 @@ import logo from '../../../src/assets/background/ALFREDO_NETO.jpeg'
 import { useMotion } from '../../context/motion'
 import { BsFillPlayFill } from 'react-icons/bs'
 import { AiFillProject } from 'react-icons/ai'
-import { DATABASE } from './database/index'
+import { DATABASE, ITech } from './database/index'
 import { TbNotebook } from 'react-icons/tb'
 import * as S from './style'
 
@@ -50,15 +50,16 @@ export const Home = () => {
                     animate="show"
                     whileInView={{ opacity: 1 }}
                 >
-                    {DATABASE.map(({name, image}) => 
-                        <S.CardTechnology variants={itemMotion} key={crypto.randomUUID()}>
-                            <S.CardTitle>{name}</S.CardTitle>
-                            <S.CardImg src={image} alt={name} />
-                        </S.CardTechnology>
+                    {DATABASE.map((tech: ITech) => 
+                        !!(tech.name && tech.image) && (
+                            <S.CardTechnology variants={itemMotion} key={crypto.randomUUID()}>
+                                <S.CardTitle>{tech.name}</S.CardTitle>
+                                <S.CardImg src={tech.image} alt={tech.name} />
+                            </S.CardTechnology>
+                        )
                     )}
                 </S.TechnologiesList>
             </S.Technologies>
         </S.Home>
     )
 }
-
