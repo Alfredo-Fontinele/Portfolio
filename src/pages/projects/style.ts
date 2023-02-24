@@ -1,14 +1,14 @@
-import HoverCard from '../../../src/assets/background/HoverCard.webp'
-import BgExtra from '../../../src/assets/background/BGextra.webp'
-import styled from "styled-components"
-import { motion } from 'framer-motion'
+import HoverCard from "../../../src/assets/background/HoverCard.webp";
+import BgExtra from "../../../src/assets/background/BGextra.webp";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const SectionProjects = styled.section`
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-`
+`;
 
 export const Projects = styled.section`
     background-size: cover;
@@ -21,7 +21,7 @@ export const Projects = styled.section`
     align-items: center;
     padding: 4rem 1rem;
     gap: 6rem;
-`
+`;
 
 export const ProjectsTitle = styled.h1`
     font-size: 2.5rem;
@@ -41,7 +41,7 @@ export const ProjectsTitle = styled.h1`
     @media only screen and (max-width: 400px) {
         flex-direction: column-reverse;
     }
-`
+`;
 
 export const ProjectsList = styled(motion.ul)`
     width: 100%;
@@ -66,11 +66,11 @@ export const ProjectsList = styled(motion.ul)`
             display: none;
         }
     }
-`
+`;
 
 export const CardProject = styled(motion.a)`
     background-image: linear-gradient(#22292393, #135be29f), url(${BgExtra});
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -88,13 +88,14 @@ export const CardProject = styled(motion.a)`
     gap: 30px;
     transition: all 1s;
     &:hover {
-        background-image: linear-gradient(#470de698, #3511d321), url(${HoverCard});
+        background-image: linear-gradient(#470de698, #3511d321),
+            url(${HoverCard});
         background-size: cover;
         background-repeat: no-repeat;
         transform: scale(1.03);
         box-shadow: 1px 1px 30px #470de6;
     }
-`
+`;
 
 export const CardTitle = styled.h1`
     text-align: center;
@@ -104,18 +105,18 @@ export const CardTitle = styled.h1`
     font-weight: bold;
     color: #fff;
     font-size: 1.5rem;
-`
+`;
 
 export const CardImg = styled.img`
     border-radius: 10px;
     object-fit: cover;
     width: 100%;
     height: 130px;
-`
+`;
 
 export const CardDescription = styled.li`
     font-weight: 600;
     font-size: 1.2em;
     color: #e5e5e5;
     text-align: center;
-`
+`;
