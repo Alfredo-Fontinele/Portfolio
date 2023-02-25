@@ -6,7 +6,7 @@ import Calculator from "../../../../src/assets/projects/calculator.png";
 import FoodBox from "../../../../src/assets/projects/foodbox.png";
 import KenzieHub from "../../../../src/assets/projects/kenzie_hub.png";
 import KenzieBurguer from "../../../../src/assets/projects/kenzie_burguer.png";
-import Nukenzie from "../../../assets/projects/kenzie_hub.png";
+import Nukenzie from "../../../assets/projects/nukenzie.png";
 import ReactionNews from "../../../../src/assets/projects/new_reaction.png";
 
 export interface IProject {
@@ -42,29 +42,29 @@ export const DATABASE_PROJECTS: IProject[] = [
         description: "Plataforma de Finanças",
     },
     {
-        name: "Kenzie Clone",
-        image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie.png",
-        url: "https://clone-kenzy-academy.vercel.app/",
-        description: "Clone do Site da Kenzie Academy Brasil",
-    },
-    {
         name: "Shop Now",
         image: ShopNow,
         url: "https://kenzie-academy-brasil-developers.github.io/entrega-lista-produtos-m2-sprint-1b-Alfredo-Fontinele/",
         description: "Plataforma de E-commerce",
     },
-    {
-        name: "Kenzie Burguer",
-        image: KenzieBurguer,
-        url: "https://kenzieburg-alfredo-fontinele.vercel.app/",
-        description: "Serviço de Delivery",
-    },
-    {
-        name: "Foodbox",
-        image: FoodBox,
-        url: "https://foodbox.razyigarashi.repl.co/",
-        description: "Plataforma de Delivery",
-    },
+    // {
+    //     name: "Kenzie Clone",
+    //     image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie.png",
+    //     url: "https://clone-kenzy-academy.vercel.app/",
+    //     description: "Clone do Site da Kenzie Academy Brasil",
+    // },
+    // {
+    //     name: "Kenzie Burguer",
+    //     image: KenzieBurguer,
+    //     url: "https://kenzieburg-alfredo-fontinele.vercel.app/",
+    //     description: "Serviço de Delivery",
+    // },
+    // {
+    //     name: "Foodbox",
+    //     image: FoodBox,
+    //     url: "https://foodbox.razyigarashi.repl.co/",
+    //     description: "Plataforma de Delivery",
+    // },
     // {
     //     name: 'Kenzie Posts',
     //     image: 'https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie_posts.png',
