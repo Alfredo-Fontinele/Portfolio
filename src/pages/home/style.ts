@@ -1,17 +1,18 @@
-import { FlipIny, FadeLeft, MoveTopDown } from '../../animations'
-import HoverCard from '../../../src/assets/background/HoverCard.webp'
-import BGDark from '../../../src/assets/background/BGextra.webp'
-import styled, { keyframes } from 'styled-components'
-import { MdKeyboardArrowDown } from 'react-icons/md'
-import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { FlipIny, FadeLeft, MoveTopDown } from "../../animations";
+import HoverCard from "../../../src/assets/background/HoverCard.webp";
+import BGDark from "../../../src/assets/background/BGextra.webp";
+import styled, { keyframes } from "styled-components";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 interface IPhoto {
-    photo: string
+    photo: string;
 }
 
 export const Home = styled.main`
-    background-image: linear-gradient(#0000009d, #0000009d, #0000009d), url(${BGDark});
+    background-image: linear-gradient(#0000009d, #0000009d, #0000009d),
+        url(${BGDark});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,7 +20,7 @@ export const Home = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-`
+`;
 
 export const HomeInitial = styled.section`
     min-height: 700px;
@@ -38,9 +39,9 @@ export const HomeInitial = styled.section`
     }
 
     @media only screen and (max-width: 450px) {
-        gap: .5rem;
+        gap: 0.5rem;
     }
-`
+`;
 
 export const SectionFirst = styled.div`
     display: flex;
@@ -57,7 +58,7 @@ export const SectionFirst = styled.div`
     @media only screen and (max-width: 400px) {
         padding: 0;
     }
-`
+`;
 
 export const SectionWelcome = styled.section`
     animation: 1s ${FadeLeft};
@@ -67,13 +68,13 @@ export const SectionWelcome = styled.section`
     gap: 50px;
     width: 100%;
     max-width: 500px;
-`
+`;
 
 export const ArrowSet = styled(MdKeyboardArrowDown)`
     animation: ${MoveTopDown} 4s infinite;
     color: #fff;
     font-size: 85px;
-`
+`;
 
 export const BegginsWelcome = styled.div`
     display: flex;
@@ -92,17 +93,17 @@ export const BegginsWelcome = styled.div`
         font-weight: 700;
         color: var(--grey-2);
     }
-`
+`;
 
 export const BiographyWelcome = styled.div`
     p {
         font-weight: 600;
         font-size: 18px;
         line-height: 30px;
-        letter-spacing: .5px;
+        letter-spacing: 0.5px;
         color: var(--grey-4);
     }
-`
+`;
 
 export const BtnsWelcome = styled.div`
     display: flex;
@@ -111,10 +112,10 @@ export const BtnsWelcome = styled.div`
 
     @media only screen and (max-width: 460px) {
         a svg {
-            display: none
+            display: none;
         }
     }
-`
+`;
 
 export const BtnProjects = styled(Link)`
     display: flex;
@@ -138,7 +139,7 @@ export const BtnProjects = styled(Link)`
     svg {
         font-size: 30px;
     }
-`
+`;
 
 export const BtnAbout = styled(Link)`
     display: flex;
@@ -160,20 +161,20 @@ export const BtnAbout = styled(Link)`
     svg {
         font-size: 30px;
     }
-`
+`;
 
 export const SectionPhoto = styled.section<IPhoto>`
     animation: 1s ${FlipIny};
     background-image: url(${({ photo }) => photo});
     background-size: cover;
     background-position: center;
-    border-radius: 20%;
+    border-radius: 10%;
     height: 300px;
     width: 280px;
-`
+`;
 
 export const Technologies = styled.section`
-    background-color: rgb(10,20,40);
+    background-color: rgb(10, 20, 40);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -184,7 +185,7 @@ export const Technologies = styled.section`
     align-items: center;
     padding: 170px 20px;
     gap: 100px;
-`
+`;
 
 export const TechnologiesTitle = styled.h1`
     display: flex;
@@ -203,7 +204,7 @@ export const TechnologiesTitle = styled.h1`
     @media only screen and (max-width: 400px) {
         flex-direction: column-reverse;
     }
-`
+`;
 
 export const TechnologiesList = styled(motion.ul)`
     width: 100%;
@@ -229,7 +230,7 @@ export const TechnologiesList = styled(motion.ul)`
             display: none;
         }
     }
-`
+`;
 
 export const CardTechnology = styled(motion.li)`
     background-image: linear-gradient(#0c2ce498, #2c0be99c), url(${BGDark});
@@ -249,13 +250,14 @@ export const CardTechnology = styled(motion.li)`
     align-items: center;
     transition: all 1s;
     &:hover {
-        background-image: linear-gradient(#470de698, #3511d321), url(${HoverCard});
+        background-image: linear-gradient(#470de698, #3511d321),
+            url(${HoverCard});
         background-size: cover;
         background-repeat: no-repeat;
         transform: scale(1.03);
         box-shadow: 1px 1px 30px #470de6;
     }
-`
+`;
 
 export const CardTitle = styled.h2`
     text-align: center;
@@ -265,9 +267,10 @@ export const CardTitle = styled.h2`
     font-weight: bold;
     color: #fff;
     font-size: 22px;
-`
+`;
 
 export const CardImg = styled.img`
     width: auto;
     height: 110px;
-`
+    border-radius: 10px;
+`;

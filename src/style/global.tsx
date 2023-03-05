@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -30,17 +30,8 @@ export const GlobalStyle = createGlobalStyle`
         background: linear-gradient(to left, #243B55, #141E30); 
     }
 
-    body::-webkit-scrollbar {
-        background-color: #243B55;
-        width: 10px;
-    }
-
-    body::-webkit-scrollbar-thumb {
-        background-color: var(--grey-2);
-    }
-
     button, svg, a {
         transition: all 0.3s;
         cursor: pointer;
     }
-`
+`;

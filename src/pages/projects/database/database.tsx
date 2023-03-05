@@ -47,6 +47,18 @@ export const DATABASE_PROJECTS: IProject[] = [
         url: "https://kenzie-academy-brasil-developers.github.io/entrega-lista-produtos-m2-sprint-1b-Alfredo-Fontinele/",
         description: "Plataforma de E-commerce",
     },
+    {
+        name: "Person_API",
+        description: "API de serviços de empregabilidade",
+        image: "https://esparksinc.com/wp-content/uploads/2021/05/Mobile-APP.svg",
+        url: "https://github.com/Alfredo-Fontinele/Person_API",
+    },
+    {
+        name: "Ecom_API",
+        description: "API de serviços de e-commerce",
+        image: "https://miro.medium.com/max/1198/1*QkzI3K92CuzCjR9Iz-ZmOA.jpeg",
+        url: "https://github.com/Alfredo-Fontinele/Ecom_API",
+    },
     // {
     //     name: "Kenzie Clone",
     //     image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie.png",
