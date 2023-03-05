@@ -48,7 +48,7 @@ export const DATABASE_PROJECTS: IProject[] = [
         description: "Plataforma de E-commerce",
     },
     {
-        name: "Person_API",
+        name: "Job_API",
         description: "API de serviços de empregabilidade",
         image: "https://esparksinc.com/wp-content/uploads/2021/05/Mobile-APP.svg",
         url: "https://github.com/Alfredo-Fontinele/Person_API",
