@@ -110,6 +110,8 @@ export const CardTitle = styled.h1`
 export const CardImg = styled.img`
     border-radius: 10px;
     min-width: 230px;
+    max-width: 250px;
+    max-height: 140px;
     height: 140px;
 `;
 

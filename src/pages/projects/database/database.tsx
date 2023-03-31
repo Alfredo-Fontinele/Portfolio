@@ -8,6 +8,7 @@ import KenzieHub from "../../../../src/assets/projects/kenzie_hub.png";
 import KenzieBurguer from "../../../../src/assets/projects/kenzie_burguer.png";
 import Nukenzie from "../../../assets/projects/nukenzie.png";
 import ReactionNews from "../../../../src/assets/projects/new_reaction.png";
+import ClieCont from "../../../../src/assets/projects/clie-cont.png";
 
 export interface IProject {
     name: string;
@@ -18,16 +19,16 @@ export interface IProject {
 
 export const DATABASE_PROJECTS: IProject[] = [
     {
+        name: "ClieCont",
+        image: ClieCont,
+        url: "https://clie-cont.vercel.app/",
+        description: "Plataforma de Contatos",
+    },
+    {
         name: "Reaction News",
         image: ReactionNews,
         url: "https://reaction-news.vercel.app/",
         description: "Plataforma de Notícias",
-    },
-    {
-        name: "SongUp",
-        image: SongUp,
-        url: "https://song-up-alfredo-fontinele.vercel.app/",
-        description: "Plataforma de Música",
     },
     {
         name: "Kenzie Hub",
@@ -45,7 +46,7 @@ export const DATABASE_PROJECTS: IProject[] = [
         name: "Shop Now",
         image: ShopNow,
         url: "https://kenzie-academy-brasil-developers.github.io/entrega-lista-produtos-m2-sprint-1b-Alfredo-Fontinele/",
-        description: "Plataforma de E-commerce",
+        description: "Plataforma E-commerce",
     },
     {
         name: "Job_API",
@@ -59,6 +60,12 @@ export const DATABASE_PROJECTS: IProject[] = [
         image: "https://miro.medium.com/max/1198/1*QkzI3K92CuzCjR9Iz-ZmOA.jpeg",
         url: "https://github.com/Alfredo-Fontinele/Ecom_API",
     },
+    // {
+    //     name: "SongUp",
+    //     image: SongUp,
+    //     url: "https://song-up-alfredo-fontinele.vercel.app/",
+    //     description: "Plataforma de Música",
+    // },
     // {
     //     name: "Kenzie Clone",
     //     image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie.png",

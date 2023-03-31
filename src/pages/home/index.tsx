@@ -49,21 +49,15 @@ export const Home = () => {
                     animate="show"
                     whileInView={{ opacity: 1 }}
                 >
-                    {DATABASE.map(
-                        (tech: ITech) =>
-                            !!(tech.name && tech.image) && (
-                                <S.CardTechnology
-                                    variants={itemMotion}
-                                    key={crypto.randomUUID()}
-                                >
-                                    <S.CardTitle>{tech.name}</S.CardTitle>
-                                    <S.CardImg
-                                        src={tech.image}
-                                        alt={tech.name}
-                                    />
-                                </S.CardTechnology>
-                            )
-                    )}
+                    {DATABASE.map((tech: ITech) => (
+                        <S.CardTechnology
+                            variants={itemMotion}
+                            key={crypto.randomUUID()}
+                        >
+                            <S.CardTitle>{tech.name}</S.CardTitle>
+                            <S.CardImg src={tech.image} alt={tech.name} />
+                        </S.CardTechnology>
+                    ))}
                 </S.TechnologiesList>
             </S.Technologies>
         </S.Home>

@@ -25,7 +25,7 @@ export const DATABASE: ITech[] = [
         image: ReactJS,
     },
     {
-        name: "NextJS",
+        name: "Next.js",
         image: NextJS,
     },
     {
@@ -41,7 +41,7 @@ export const DATABASE: ITech[] = [
         image: Git,
     },
     {
-        name: "NestJS",
+        name: "Nest.js",
         image: NestJS,
     },
     {
@@ -61,11 +61,11 @@ export const DATABASE: ITech[] = [
         image: Prisma,
     },
     {
-        name: "NodeJS",
+        name: "Node.js",
         image: NodeJS,
     },
     {
-        name: "ExpressJS",
+        name: "Express.js",
         image: Express,
     },
     {

@@ -1,6 +1,5 @@
 import { DATABASE_PROJECTS, IProject } from "./database/database";
 import { BsFillBarChartLineFill } from "react-icons/bs";
-import { AiOutlineRightSquare } from "react-icons/ai";
 import { useMotion } from "../../context/motion";
 import * as S from "./style";
 
