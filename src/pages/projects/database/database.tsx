@@ -43,12 +43,6 @@ export const DATABASE_PROJECTS: IProject[] = [
         description: "Plataforma de Finanças",
     },
     {
-        name: "Shop Now",
-        image: ShopNow,
-        url: "https://kenzie-academy-brasil-developers.github.io/entrega-lista-produtos-m2-sprint-1b-Alfredo-Fontinele/",
-        description: "Plataforma E-commerce",
-    },
-    {
         name: "Job_API",
         description: "API de serviços de empregabilidade",
         image: "https://esparksinc.com/wp-content/uploads/2021/05/Mobile-APP.svg",
@@ -60,46 +54,4 @@ export const DATABASE_PROJECTS: IProject[] = [
         image: "https://miro.medium.com/max/1198/1*QkzI3K92CuzCjR9Iz-ZmOA.jpeg",
         url: "https://github.com/Alfredo-Fontinele/Ecom_API",
     },
-    // {
-    //     name: "SongUp",
-    //     image: SongUp,
-    //     url: "https://song-up-alfredo-fontinele.vercel.app/",
-    //     description: "Plataforma de Música",
-    // },
-    // {
-    //     name: "Kenzie Clone",
-    //     image: "https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie.png",
-    //     url: "https://clone-kenzy-academy.vercel.app/",
-    //     description: "Clone do Site da Kenzie Academy Brasil",
-    // },
-    // {
-    //     name: "Kenzie Burguer",
-    //     image: KenzieBurguer,
-    //     url: "https://kenzieburg-alfredo-fontinele.vercel.app/",
-    //     description: "Serviço de Delivery",
-    // },
-    // {
-    //     name: "Foodbox",
-    //     image: FoodBox,
-    //     url: "https://foodbox.razyigarashi.repl.co/",
-    //     description: "Plataforma de Delivery",
-    // },
-    // {
-    //     name: 'Kenzie Posts',
-    //     image: 'https://raw.githubusercontent.com/Alfredo-Fontinele/Projects_Imgs/main/kenzie_posts.png',
-    //     url: 'https://posts-news-kenzie.vercel.app/',
-    //     description: 'Blog | Kenzie (Layout)'
-    // },
-    // {
-    //     name: 'Gerador de Senha',
-    //     image: PasswordGenerator,
-    //     url: 'https://password-generator-alfredo-fontinele.vercel.app/',
-    //     description: 'Gerador de Senhas'
-    // },
-    // {
-    //     name: 'Todo List',
-    //     image: TodoList,
-    //     url: 'https://todo-list-plum-one.vercel.app/',
-    //     description: 'Lista de Tarefas'
-    // }
 ];
