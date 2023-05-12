@@ -72,6 +72,7 @@ export const CardProject = styled(motion.a)`
     border: 1px solid #ccc;
     width: 100%;
     height: 100%;
+    min-width: 380px;
     max-width: 380px;
     min-height: 360px;
     padding: 3rem 2rem;
