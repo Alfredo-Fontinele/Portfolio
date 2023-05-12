@@ -18,7 +18,6 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         border: 0;
         outline: 0;
-        list-style: none;
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
     }

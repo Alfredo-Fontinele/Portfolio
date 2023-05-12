@@ -45,21 +45,20 @@ export const ProjectsTitle = styled.h1`
 
 export const ProjectsList = styled(motion.ul)`
     width: 100%;
-    max-width: 1500px;
+    max-width: 1900px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 70px;
     @media only screen and (max-width: 800px) {
         width: 100%;
-        max-height: 500px;
         display: flex;
         flex-wrap: nowrap;
         overflow-y: auto;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         padding: 40px 0;
         gap: 50px;
         ::-webkit-scrollbar {
@@ -69,31 +68,22 @@ export const ProjectsList = styled(motion.ul)`
 `;
 
 export const CardProject = styled(motion.a)`
-    background-image: linear-gradient(#22292393, #135be29f), url(${BgExtra});
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     border-radius: 10px;
+    border: 1px solid #ccc;
     width: 100%;
     height: 100%;
-    min-width: 320px;
-    max-width: 320px;
+    max-width: 380px;
     min-height: 360px;
-    padding: 2rem;
+    padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 3rem;
     transition: all 1s;
+
     &:hover {
-        background-image: linear-gradient(#470de698, #3511d321),
-            url(${HoverCard});
-        background-size: cover;
-        background-repeat: no-repeat;
-        transform: scale(1.03);
-        box-shadow: 1px 1px 30px #470de6;
+        transform: scale(1.01);
     }
 `;
 
@@ -109,15 +99,17 @@ export const CardTitle = styled.h1`
 
 export const CardImg = styled.img`
     border-radius: 10px;
-    min-width: 230px;
-    max-width: 250px;
-    max-height: 140px;
-    height: 140px;
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    min-height: 160px;
+    max-height: 160px;
 `;
 
 export const CardDescription = styled.li`
+    list-style: none;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #e5e5e5;
     text-align: center;
 `;

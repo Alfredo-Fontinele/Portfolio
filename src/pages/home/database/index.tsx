@@ -49,10 +49,10 @@ export const DATABASE: ITech[] = [
         name: "TypeScript",
         image: TypeScript,
     },
-    {
-        name: "Docker",
-        image: Docker,
-    },
+    // {
+    //     name: "Docker",
+    //     image: Docker,
+    // },
     {
         name: "PostgreSQL",
         image: PostgreSQL,
@@ -73,10 +73,10 @@ export const DATABASE: ITech[] = [
         name: "Jest",
         image: Jest,
     },
-    {
-        name: "MongoDB",
-        image: MongoDB,
-    },
+    // {
+    //     name: "MongoDB",
+    //     image: MongoDB,
+    // },
     {
         name: "Django",
         image: Django,
