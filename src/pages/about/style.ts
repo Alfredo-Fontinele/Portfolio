@@ -52,6 +52,7 @@ export const AboutText = styled.ul`
 
 export const AboutItem = styled.li`
     animation: 1s ${FadeInDown};
+    list-style: none;
     font-size: 18px;
     font-weight: 500;
     padding: 2rem;

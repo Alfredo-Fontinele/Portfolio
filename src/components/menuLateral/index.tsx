@@ -1,29 +1,29 @@
-import { MouseEvent, useEffect, useRef } from 'react'
-import { useMyStates } from '../../context/states'
-import { BiConversation } from 'react-icons/bi'
-import { GrContactInfo } from 'react-icons/gr'
-import { HiOutlineHome } from 'react-icons/hi'
-import { CgUserList } from 'react-icons/cg'
-import { MdWork } from 'react-icons/md'
-import { Link } from 'react-router-dom'
-import * as S from './style'
+import { MouseEvent, useEffect, useRef } from "react";
+import { useMyStates } from "../../context/states";
+import { BiConversation } from "react-icons/bi";
+import { GrContactInfo } from "react-icons/gr";
+import { HiOutlineHome } from "react-icons/hi";
+import { CgUserList } from "react-icons/cg";
+import { MdWork } from "react-icons/md";
+import { Link } from "react-router-dom";
+import * as S from "./style";
 
 export const MenuLateral = () => {
-    const { setStatusMenu } = useMyStates()
-    const modal = useRef<HTMLDivElement | null>(null)
+    const { setStatusMenu } = useMyStates();
+    const modal = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         const handleOutClick = (event: any) => {
-            const target = event.target
+            const target = event.target;
             if (!modal.current?.contains(target)) {
-                setStatusMenu(false)
+                setStatusMenu(false);
             }
-        }
-        document.addEventListener('mousedown', handleOutClick)
+        };
+        document.addEventListener("mousedown", handleOutClick);
         return () => {
-            document.removeEventListener('mousedown', handleOutClick)
-        }
-    }, [])
+            document.removeEventListener("mousedown", handleOutClick);
+        };
+    }, []);
 
     return (
         <S.MenuLateral ref={modal}>
@@ -31,30 +31,30 @@ export const MenuLateral = () => {
                 <ul>
                     <li>
                         <Link to="/">
-                            <HiOutlineHome/>
+                            <HiOutlineHome />
                             Inicio
                         </Link>
                     </li>
                     <li>
                         <Link to="/projects">
-                            <MdWork/>
+                            <MdWork />
                             Projetos
                         </Link>
                     </li>
                     <li>
                         <Link to="/about">
-                            <BiConversation/>
+                            <BiConversation />
                             Sobre
                         </Link>
                     </li>
                     <li>
                         <Link to="/contact">
-                            <CgUserList/>
+                            <CgUserList />
                             Contato
                         </Link>
                     </li>
                 </ul>
             </nav>
         </S.MenuLateral>
-    )
-}
+    );
+};

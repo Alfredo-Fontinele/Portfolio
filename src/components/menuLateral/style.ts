@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { IoMdClose } from 'react-icons/io'
-import { FadeInRight } from '../../animations'
+import styled from "styled-components";
+import { IoMdClose } from "react-icons/io";
+import { FadeInRight } from "../../animations";
 
 export const MenuLateral = styled.div`
     animation: 0.5s ${FadeInRight};
@@ -15,7 +15,7 @@ export const MenuLateral = styled.div`
     flex-direction: column;
     padding: 3rem 1rem;
     gap: 50px;
-    background-color: rgba(20,30,50,0.97);
+    background-color: rgba(20, 30, 50, 0.97);
 
     nav ul {
         display: flex;
@@ -23,6 +23,10 @@ export const MenuLateral = styled.div`
         justify-content: center;
         align-items: flex-start;
         gap: 50px;
+    }
+
+    nav ul li {
+        list-style: none;
     }
 
     nav ul li svg {
@@ -39,7 +43,7 @@ export const MenuLateral = styled.div`
         color: #fcfcfc;
         gap: 20px;
     }
-`
+`;
 
 export const BtnClose = styled(IoMdClose)`
     font-size: 35px;
@@ -47,4 +51,4 @@ export const BtnClose = styled(IoMdClose)`
     display: flex;
     justify-content: center;
     align-items: center;
-`
+`;
