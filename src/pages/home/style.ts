@@ -270,6 +270,7 @@ export const CardTitle = styled.h2`
 
 export const CardImg = styled.img`
   width: auto;
-  height: 110px;
+  height: 100%;
+  max-height: 110px;
   border-radius: 10px;
 `
