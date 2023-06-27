@@ -1,5 +1,5 @@
 export interface IEmailRequest {
-    from: string
-    subject: string
-    text: string
+  from: string
+  subject: string
+  text: string
 }

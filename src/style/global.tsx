@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -33,4 +33,4 @@ export const GlobalStyle = createGlobalStyle`
         transition: all 0.3s;
         cursor: pointer;
     }
-`;
+`
