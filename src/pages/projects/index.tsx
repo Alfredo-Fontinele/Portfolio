@@ -13,48 +13,50 @@ export const Projects = () => {
           Meus Projetos
         </S.ProjectsTitle>
         <S.ProjectsList variants={listMotion} initial="hidden" animate="show">
-          {DATABASE_PROJECTS.map((project: IProject) => (
-            <S.CardProject
-              variants={itemMotion}
-              key={crypto.randomUUID()}
-              href={project.url}
-              target="_blank"
-            >
-              <S.CardTitle>{project.name}</S.CardTitle>
-              <S.CardImg src={project.image} alt={project.name} />
-              <S.CardDescription>{project.description}</S.CardDescription>
-              <ul
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: 25,
-                  width: "100%",
-                }}
+          {DATABASE_PROJECTS.map((project: IProject, index) => (
+            <section key={index}>
+              <S.CardProject
+                variants={itemMotion}
+                key={crypto.randomUUID()}
+                href={project.url}
+                target="_blank"
               >
-                {!!project.tecnologies?.length &&
-                  project.tecnologies.map((tech) => (
-                    <li
-                      style={{
-                        display: "flex",
-                        justifyContent: "flex-start",
-                        alignItems: "center",
-                        listStyle: "none",
-                        gap: 25,
-                      }}
-                    >
-                      <img src={tech.icon} height={25} width={25} />
-                      <p
+                <S.CardTitle>{project.name}</S.CardTitle>
+                <S.CardImg src={project.image} alt={project.name} />
+                <S.CardDescription>{project.description}</S.CardDescription>
+                <ul
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 25,
+                    width: "100%",
+                  }}
+                >
+                  {!!project.tecnologies?.length &&
+                    project.tecnologies.map((tech) => (
+                      <li
                         style={{
-                          color: "#eaeaea",
-                          fontSize: 20,
+                          display: "flex",
+                          justifyContent: "flex-start",
+                          alignItems: "center",
+                          listStyle: "none",
+                          gap: 25,
                         }}
                       >
-                        {tech.name}
-                      </p>
-                    </li>
-                  ))}
-              </ul>
-            </S.CardProject>
+                        <img src={tech.icon} height={25} width={25} />
+                        <p
+                          style={{
+                            color: "#eaeaea",
+                            fontSize: 20,
+                          }}
+                        >
+                          {tech.name}
+                        </p>
+                      </li>
+                    ))}
+                </ul>
+              </S.CardProject>
+            </section>
           ))}
         </S.ProjectsList>
       </S.Projects>

@@ -5,14 +5,9 @@ import { FiSend } from "react-icons/fi"
 import { IoShareSocialSharp } from "react-icons/io5"
 import { MdOutlineEmail } from "react-icons/md"
 import { toast } from "react-toastify"
+import { USER_ADMIN_CONSTRAINT } from "../../constraints"
 import { ArrowSet } from "./../home/style"
 import * as S from "./style"
-
-const USER_ADMIN = {
-  public_key: "21sqNXSXvyqja_de1",
-  template_id: "template_pz4yauc",
-  service_id: "service_bdmd21g",
-}
 
 export const Contact = () => {
   const inputName = useRef<HTMLInputElement | null>(null)
@@ -37,13 +32,13 @@ export const Contact = () => {
     }
     return await emailjs
       .sendForm(
-        USER_ADMIN.service_id,
-        USER_ADMIN.template_id,
+        USER_ADMIN_CONSTRAINT.service_id,
+        USER_ADMIN_CONSTRAINT.template_id,
         form.current,
-        USER_ADMIN.public_key
+        USER_ADMIN_CONSTRAINT.public_key
       )
       .then(() => {
-        toast.success("Email Enviado ✅")
+        toast.success("Email Enviado")
         clear()
       })
       .catch((error) => {
@@ -83,10 +78,6 @@ export const Contact = () => {
             <FaWhatsapp />
             Telefone
           </S.NetworkSocialItem>
-          {/* <S.NetworkSocialItem target="_blank" href="https://www.instagram.com/alfredo_fontinele/" bg="#d428cc">
-                        <FaInstagram/>
-                        Instagram
-                    </S.NetworkSocialItem> */}
           <S.NetworkSocialItem
             target="_blank"
             href="https://www.youtube.com/channel/UCHGyhE14Wc_WqvPD3QjmywA"
