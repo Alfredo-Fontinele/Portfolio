@@ -3,9 +3,9 @@ import { ITitle } from "../../interfaces/title"
 
 export const Footer = ({ title }: ITitle) => {
   const getCurrentYear = () => new Date().getFullYear()
-  
+
   return (
-    <S.Footers>
+    <S.Footer>
       <S.FooterContainer>
         <S.FooterIcons>
           <S.FooterSocial
@@ -28,7 +28,9 @@ export const Footer = ({ title }: ITitle) => {
           </S.FooterSocial>
         </S.FooterIcons>
         <S.FooterDeveloper>
-          <h3>&copy;{title} {getCurrentYear}</h3>
+          <h3>
+            &copy;{title} {getCurrentYear}
+          </h3>
         </S.FooterDeveloper>
       </S.FooterContainer>
     </S.Footer>
