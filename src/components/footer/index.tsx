@@ -1,8 +1,9 @@
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
 import { ITitle } from "../../interfaces/title"
+import * as S from "./style"
 
 export const Footer = ({ title }: ITitle) => {
-  const getCurrentYear = () => new Date().getFullYear()
+  const getCurrentYear = new Date().getFullYear()
 
   return (
     <S.Footer>
